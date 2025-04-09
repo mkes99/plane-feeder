@@ -41,13 +41,18 @@ Once installed you will need to enter your PlaneFinder account details and selec
 ````
 wget -qO- https://fr24.com/install.sh | sudo bash -s
 ````
-Go through the confinguration process your reciever type will be "avr-tcp" and your host will be <ip>:30002. If you need to you can edit your configuration file at /etc/fr24feed.ini. You can also visit <ip>::8754 to see the FlightRadar24 web interface.
+Go through the confinguration process your reciever type will be "avr-tcp" and your host will be <ip>:30002. If you need to you can edit your configuration file at /etc/fr24feed.ini. Also make sure in your config you have your path set `path="/usr/lib/fr24/dump1090"`. You can also visit <ip>::8754 to see the FlightRadar24 web interface.
 
 ## useful commands and links
 ````
 sudo systemctl status <client>
 sudo systemctl restart <client>
 sudo systemctl stop <client>
+
+Client calls :
+planefinder - pfclient
+flight radar - fr24feed
+Flightaware - piaware
 
 https://github.com/abcd567a/piaware-ubuntu-debian-amd64/blob/master/README.md
 https://planefinder.net/coverage/client
