@@ -35,7 +35,7 @@ wget http://client.planefinder.net/pfclient_x.x.x_armhf.deb
 (replace x.x.x with the current version number – you can get the latest version from here
 https://planefinder.net/sharing/client) download the correct version and note the version number to change the above command
 
-Once installed you will need to enter your PlaneFinder account details and select the correct device type. If you are using a PiAware device, you can also visit <ip>::30053 to see the PlaneFinder web interface. Enter your email address, lat and long and click next on the following screen select beast and enter the ip for your device and port 30005 and save. You should now be collecting data. 
+Once installed you will need to enter your PlaneFinder account details and select the correct device type. If you are using a PiAware device, you can also visit <ip>::30053 to see the PlaneFinder web interface. Enter your email address, lat and long and click next on the following screen select `beast` and enter the ip for your device and port 30005 and save. You should now be collecting data. 
 
 ## Install FlightRadar24
 ````
