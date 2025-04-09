@@ -1,5 +1,5 @@
 # Install FlightAware, PlaneFinder and FlightRadar24 on a raspberry pi already running dump1090
-## Flightaware
+## Instal Flightaware
 
 Update current raspberry pi
 
@@ -38,10 +38,6 @@ sudo nano /etc/default/dump1090-fa
 add this line of code
 ````
 RECEIVER_OPTIONS="--net --net-only --net-beast --net-ro-size 1000 --net-ro-interval 1 --net-ri-port 30005"
-````
-## Install piaware (flightaware)
-````
-sudo bash -c "$(wget -O - https://raw.githubusercontent.com/abcd567a/piaware-ubuntu-debian-amd64/master/install-piaware.sh)"
 ````
 You should be able to vist <ip>8080 and see the dump1090-fa web interface. If you are using a PiAware device, you can also visit <ip>8080 to see the dump1090-fa web interface.
 
