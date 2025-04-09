@@ -31,14 +31,6 @@ sudo apt install dump1090-fa
 ```
 sudo reboot
 ```
-## Edit dump1090-fa config to brodcast beast
-````
-sudo nano /etc/default/dump1090-fa
-````
-add this line of code
-````
-RECEIVER_OPTIONS="--net --net-only --net-beast --net-ro-size 1000 --net-ro-interval 1 --net-ri-port 30005"
-````
 You should be able to vist <ip>8080 and see the dump1090-fa web interface. If you are using a PiAware device, you can also visit <ip>8080 to see the dump1090-fa web interface.
 
 FlightAware Claim your new device
@@ -52,6 +44,14 @@ Or
 Claim your PiAware client on FlightAware.com
 If after 5 minutes your device hasn't displayed as claimed try restarting the device, if that still doesn't work re-confirm the Wi-Fi settings (if using Wi-Fi) are correct. Lastly contact us at ADSBsupport@FlightAware.com. Check your stats page (link below) to confirm it was claimed.
 
+## Edit dump1090-fa config to brodcast beast
+````
+sudo nano /etc/default/dump1090-fa
+````
+add this line of code
+````
+RECEIVER_OPTIONS="--net --net-only --net-beast --net-ro-size 1000 --net-ro-interval 1 --net-ri-port 30005"
+````
 ## Install PlaneFinder Client
 ````
 wget http://client.planefinder.net/pfclient_x.x.x_armhf.deb
