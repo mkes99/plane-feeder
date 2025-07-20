@@ -16,7 +16,7 @@ root@proxmox:~# ls -l /dev/bus/usb/001/007
 crw-rw-rw- 1 root root 189, 6 Aug  8 21:41 /dev/bus/usb/001/007
 ````
 ## Adjust LXC configuration - Pass through the dongle from the host to the container.
-adjusting for your container id values.
+Adjusting for your container id values.
 ````
 root@proxmox:~# nano /etc/pve/lxc/156.conf
 Add the following two lines to the configuration file:
